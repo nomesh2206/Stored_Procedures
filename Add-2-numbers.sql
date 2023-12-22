@@ -5,3 +5,9 @@ as
 Begin
 	Set @Result = @p1+ @p2
 End
+
+--Execution
+	
+Declare @r int
+Execute AddTwoNumber 20,25,@r output
+Select @r as Result
